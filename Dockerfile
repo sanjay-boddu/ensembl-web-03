@@ -1,7 +1,7 @@
 FROM sanjayboddu/ensembl-web-libs-2:v1
 
 WORKDIR ${ENSEMBL_SOFTWARE_DEPENDENCIES_LOCATION}/linuxbrew-automation
-
+RUN git pull
 USER www
 
 RUN source ${HOME}/.bashrc \ 
