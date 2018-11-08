@@ -7,4 +7,4 @@ USER www
 RUN source ${HOME}/.bashrc \ 
     && /bin/bash -c "time source 03-perl-and-python-dependencies.sh" \
     && /bin/bash -c "time source 04-misc.sh" \
-    && rm ${HOME}/.cpanm/work/* 
+    && rm -r ${HOME}/.cpanm/work/* 
